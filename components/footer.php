@@ -12,7 +12,7 @@ if (isset($_SESSION['msg'])) {
 
 <script src="./js/toggleLogin.js"></script>
 <script src="./js/togglePwd.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

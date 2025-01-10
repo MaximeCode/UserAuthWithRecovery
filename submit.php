@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once 'pdoConnection/db.php';
-require_once 'functions.php';
+require_once './pdoConnection/db.php';
+require_once './functions.php';
 // Récupération des données du formulaire
 
 try {// Connexion à la base de données
@@ -35,7 +35,7 @@ if (isset($_POST['itsLogin']) && $_POST['itsLogin']) {
             $_SESSION['commune'] = $infoCommunes['nom'];
 
             // Redirection vers la page d'accueil de l'app principale
-            header('Location: /archivestest/home.php');
+            header('Location: ./home.php');
             exit();
 
         } else {
@@ -84,7 +84,7 @@ if (isset($_POST['itsLogin']) && $_POST['itsLogin']) {
                 $_SESSION['commune'] = $infoCommunes['nom'];
 
                 // Redirection vers la page d'accueil de l'app principale
-                header('Location: /archivestest/home.php');
+                header('Location: ./home.php');
                 exit();
             } catch (Exception $e) {
                 $_SESSION['logged'] = false;
@@ -145,7 +145,7 @@ if (isset($_POST['itsLogin']) && $_POST['itsLogin']) {
         $_SESSION['msg'] = 'Erreur, veuillez réessayer';
     }
     // Redirection vers la page de réinitialisation
-    header('Location: /archivestest/pwdForgot.php');
+    header('Location: ./pwdForgot.php');
     exit();
 // Les données proviennent du formulaire de réinitialisation de mot de passe
 } elseif (isset($_POST['itsResetPwd']) && $_POST['itsResetPwd']) {
@@ -174,7 +174,7 @@ if (isset($_POST['itsLogin']) && $_POST['itsLogin']) {
             $_SESSION['msg'] = 'Code de vérification incorrect';
 
             // Redirection vers la page de réinitialisation
-            header('Location: /archivestest/pwdForgot.php');
+            header('Location: ./pwdForgot.php');
             exit();
         }
     } else {
@@ -182,9 +182,9 @@ if (isset($_POST['itsLogin']) && $_POST['itsLogin']) {
         $_SESSION['msg'] = 'Erreur, veuillez réessayer';
     }
     // Redirection vers la page de connexion
-    header('Location: /archivestest');
+    header('Location: ./');
     exit();
 }
 
 // Redirection vers la page de connexion
-header('Location: /archivestest');
+header('Location: ./');

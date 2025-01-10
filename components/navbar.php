@@ -5,7 +5,7 @@ $curPageName = substr($_SERVER["SCRIPT_NAME"], strrpos($_SERVER["SCRIPT_NAME"], 
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/archivesTest/">Navbar</a>
+        <a class="navbar-brand" href="./">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,8 +27,8 @@ $curPageName = substr($_SERVER["SCRIPT_NAME"], strrpos($_SERVER["SCRIPT_NAME"], 
                 echo '<a class="btn btn-outline-danger" href="./logout.php">Se déconnecter</a>';
             } else {
                 echo '<div class="btn-group" role="group">' . ($curPageName === 'pwdForgot.php'
-                        ? '<a class="btn btn-outline-primary" href="/archivesTest/">Se connecter</a>
-                           <a class="btn btn-outline-primary" href="/archivesTest/">S\'inscrire</a>'
+                        ? '<a class="btn btn-outline-primary" href="/">Se connecter</a>
+                           <a class="btn btn-outline-primary" href="/">S\'inscrire</a>'
                         : '<button type="button" class="btn btn-outline-primary" onclick="toggleLogin()">Se connecter</button>
                            <button type="button" class="btn btn-outline-primary" onclick="toggleSignup()">S\'inscrire</button>') . '
                     </div>';
