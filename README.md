@@ -12,8 +12,9 @@ This code is sent to the user's email, and when the user enters the code, they c
 git clone https://github.com/MaximeCode/UserAuthWithRecovery.git
 ```
 
-2. Second, install all dependencies of the project:
+2. Second, go to the folder and install all dependencies of the project:
 ```bash
+cd UserAuthWithRecovery
 npm install
 ```
 3. Third, start the local development server:\
