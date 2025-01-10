@@ -28,7 +28,7 @@ php -S localhost:8000
 
 > [!WARNING]
 > Be sure to create a specific user to access the database!
-> Make sure to configure your database connection in the file `pdoConnection/db.php` _`Line 17`_\
+> Make sure to configure your database connection in the file `pdoConnection/db.php` _`Line 17`_
 
 Finally, open your browser and navigate to: [http://localhost:8000](http://localhost:8000)
 
