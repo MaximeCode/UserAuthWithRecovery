@@ -14,7 +14,7 @@ class db
     {
         try
         {
-            $this->dbh = new PDO('mysql:host=localhost;dbname=archivesTest', 'username', 'password', array(PDO::ATTR_PERSISTENT => false));
+            $this->dbh = new PDO('mysql:host=localhost;dbname=archivesTest', 'devphp', 'D3vPhP!28-51Kg', array(PDO::ATTR_PERSISTENT => false));
         }
         catch(PDOException $e)
         {
