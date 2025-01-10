@@ -17,7 +17,7 @@ git clone https://github.com/MaximeCode/UserAuthWithRecovery.git
 cd UserAuthWithRecovery
 npm install
 ```
-3. Third, start the local development server:\
+3. Third, start a development server like `XAMPP`, `WAMP`, `LAMP`, or `laragon`:\
 If you're using PHP's built-in server, you can run:
 ```bash
 php -S localhost:8000
